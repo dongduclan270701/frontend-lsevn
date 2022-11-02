@@ -1,0 +1,62 @@
+.tdbreak {
+    /* display: inline-block; */
+    /* width: 106px; */
+    /* width: auto; */
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+#cancel-link:hover{
+    text-decoration: none;
+}
+.datatable1 {
+    min-height: 520px;
+    /* height: auto; */
+    margin-top: 20px;
+    display: block;
+    max-height: 700px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    table-layout: fixed;
+}
+.circle-rotate{
+    margin: auto
+}
+.circle-rotate svg{ 
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    animation: rotation 1.5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+@media (max-width: 1366px){
+    .datatable1 tbody tr td{
+        word-wrap: break-word;
+        max-width: 120px;
+    }
+}
+@media (min-width: 1377px) and (max-width: 1920px){
+    .datatable1 tbody tr td{
+        word-wrap: break-word;
+        max-width: 320px;
+    }
+}
+.datatable1 thead{
+    position: sticky;
+    top: 0
+}
+#container-import-data{
+    min-width: 100%;
+    margin: 0
+}

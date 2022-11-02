@@ -1,0 +1,72 @@
+
+
+@media (max-width: 575px){
+    #button-show-chart {
+        width: 100%;
+        left: 92%;
+        bottom: 88%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    #button-show-chart {
+        width: 100%;
+        left: 92%;
+        bottom: 88%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #button-show-chart {
+        width: 100%;
+        left: 95%;
+        bottom: 86%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    #button-show-chart {
+        width: 100%;
+        left: 95%;
+        bottom: 86%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+    #button-show-chart {
+        width: 100%;
+        left: 92%;
+        bottom: 86%;
+    }
+}
+
+
+.table-project-data{
+    /* overflow-y:scroll; */
+    /* overflow-x:hidden; */
+}
+.table-project-data table{
+    /* transform-origin: top left;
+    transform: scaleX(79%); */
+}
+.table-vcenter{
+    /* transform: scale(80%);
+    transform-origin: top left */
+}
+#table-data table thead:first-child{
+    position: sticky;
+    top: 0;
+}
+#table-data table thead:last-child{
+    position: sticky;
+    bottom: -2px;
+}
+/* 
+@media (max-width:1399px) {
+    #button-show-chart {
+        width: 100%;
+        left: 92%;
+        bottom: 80%;
+    }
+} */
+.icon-chart-head{
+    stroke-width: 1.8;
+    color: green;
+}
+

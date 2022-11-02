@@ -1,0 +1,140 @@
+.left-category-list{
+    display:none;
+    position:fixed;
+    margin-top: 20px;
+    z-index: 99;
+}
+
+.button-show-left-menu{
+    transform: rotate(90deg);
+    position:fixed;
+    width: 200px;
+    height: 50px;
+    margin-top: 95px;
+    margin-left: -70px;
+    z-index: 999;
+    font-size: 0.8rem;
+    overflow-wrap:break-word;
+    background-color: white;
+    border: 1px solid #c7c7c7;
+}
+
+.body-to-scroll{
+    width: 240px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    display: inline-block
+}
+.body-to-scroll tr td{
+    min-width: 230px;
+}
+#table-data table thead:first-child{
+    position: sticky;
+    top: 0;
+}
+#table-data table thead:last-child{
+    position: sticky;
+    bottom: -2px;
+}
+
+@media (max-height :300px){
+    .body-to-scroll{
+        max-height: 160px;
+    }
+}
+@media (min-height: 301) and (max-height :400px){
+    .body-to-scroll{
+        max-height: 260px;
+    }
+}
+@media (min-height: 401) and (max-height :600px){
+    .body-to-scroll{
+        max-height: 360px;
+    }
+}
+@media (min-height :600px){
+    .body-to-scroll{
+        max-height: 400px;
+    }
+}
+
+
+@media (max-width: 575px){
+    .body-to-scroll{
+        height: 250px;
+    }
+    #button-show-chart {
+        width: 100%;
+        left: 92%;
+        bottom: 88%;
+    }
+
+    /* .left-category-list{
+        transform: rotate(90deg);
+        margin-left: -250px;
+    } */
+}
+@media (min-width: 576px) and (max-width: 767px){
+    #button-show-chart {
+        width: 100%;
+        left: 92%;
+        bottom: 88%;
+    }
+  
+}
+@media (min-width: 768px) and (max-width: 991px){
+   
+    #button-show-chart {
+        width: 100%;
+        left: 95%;
+        bottom: 86%;
+    }
+  
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    
+    #button-show-chart {
+        width: 100%;
+        left: 95%;
+        bottom: 86%;
+    }
+    
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+    #button-show-chart {
+        width: 100%;
+        left: 92%;
+        bottom: 86%;
+    }
+}
+@media (max-width:1399.98px) {
+    /* .body-to-scroll{
+        max-width: 250px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+        display: inline-block
+    } */
+   
+  }
+.left-category-list .table-responsive table tbody{
+    background-color: white;
+}
+.left-category-list .table-responsive table tbody tr{
+    max-height: 50px;
+    cursor: pointer;
+}
+.row-category-table1:hover{
+    background-color: #f5f7fb;
+}
+.row-category-table1 td svg{
+    cursor: pointer;
+    display: none;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+#table-data table thead tr th svg{
+    cursor: pointer;
+}

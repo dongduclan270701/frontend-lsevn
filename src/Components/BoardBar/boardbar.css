@@ -1,0 +1,98 @@
+
+.board-bar{
+    display:block
+}
+li a{
+    height: 30px;
+    text-decoration: none;
+    margin-top: 7px;
+}
+/* .nav-item.active:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -.25rem;
+    border: 0 solid #206bc4;
+    border-bottom-width: 2px
+} */
+
+.menu-boardbar-mobile{
+    align-items: baseline !important;
+}
+.nav-link .nav-link1{
+    display: flex;
+    color: black
+}
+.button-username{
+    border-radius: 100%;
+}
+.nav-link1.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -.25rem;
+    border: 0 solid #206bc4;
+    border-bottom-width: 2px
+}
+/* .border-board-bar{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -.25rem;
+    border: 0 solid #206bc4;
+    border-bottom-width: 2px
+} */
+@media(max-width: 767px){
+    #link-logout{
+        margin-top: -32px;
+        margin-left: 60px;
+        padding: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #f2f3f4;
+        border-radius: 15px;
+    }
+}
+@media (max-width: 767px){
+    .board-bar{
+        display:none
+    }
+    .menu-boardbar-mobile ul{
+        width: min-content;
+    }
+    .menu-boardbar-mobile ul li{
+        width: max-content;
+    }
+    .button-logout{
+        margin-left: 10px;
+    }
+    .nav-link1.active::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -.25rem;
+        border: 0 solid #206bc4;
+        border-bottom-width: 2px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .board-bar-mobile{
+        margin-bottom: 0rem !important;
+    }
+    /* .nav-link-icon{
+        margin-right: 0px !important;
+    }
+    .navbar-expand-md .navbar-nav .nav-link{
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: 10px;
+    }
+    .navbar-expand-md .navbar-light .nav-item.active:after, .navbar-expand-md.navbar-light .nav-item.active:after{
+        bottom: 3px
+    } */
+}

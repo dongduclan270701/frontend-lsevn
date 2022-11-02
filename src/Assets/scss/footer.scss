@@ -1,0 +1,127 @@
+.footer-transparent {
+    background-color: transparent;
+    border-top: 0;
+}
+.footer {
+    border-top: 1px solid #e6e7e9;
+    background-color: #fff;
+    padding: 2rem 0;
+    color: #626976;
+    margin-top: auto;
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        --tblr-gutter-x: 1.5rem;
+        --tblr-gutter-y: 0;
+        width: 100%;
+        padding-right: calc(var(--tblr-gutter-x) * .5);
+        padding-left: calc(var(--tblr-gutter-x) * .5);
+        margin-right: auto;
+        margin-left: auto;
+        .text-center {
+            text-align: center!important;
+        }
+        .align-items-center {
+            align-items: center!important;
+        }
+        .flex-row-reverse {
+            flex-direction: row-reverse!important;
+        }
+        .row {
+            --tblr-gutter-x: 1rem;
+            --tblr-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1 * var(--tblr-gutter-y));
+            margin-right: calc(-.5 * var(--tblr-gutter-x));
+            margin-left: calc(-.5 * var(--tblr-gutter-x));
+            .mb-0 {
+                margin-bottom: 0!important;
+            }
+            .list-inline {
+                padding-left: 0;
+                list-style: none;
+            }
+            ol, ul {
+                padding-left: 1.5rem;
+            }
+            dl, ol, ul {
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+            ol, ul {
+                padding-left: 2rem;
+            }
+            .list-inline-item:not(:last-child) {
+                margin-right: auto;
+                -webkit-margin-end: 0.5rem;
+                margin-inline-end: 0.5rem;
+            }
+            .list-inline-item:not(:last-child) {
+                margin-right: 0.5rem;
+            }
+            .list-inline-item {
+                display: inline-block;
+                
+                .link-secondary {
+                    color: #626976!important;
+                    text-decoration: none;
+                    .text-pink {
+                        color: var(--tblr-pink)!important;
+                    }
+                    .icon-filled {
+                        fill: currentColor;
+                    }
+                    .icon-inline {
+                        width: 1em !important;
+                        height: 1em !important;
+                        font-size: 1.1428571429em !important;
+                        vertical-align: -0.2em !important;
+                    }
+                    .icon {
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        font-size: 1.25rem;
+                        vertical-align: bottom;
+                        stroke-width: 1.5;
+                    }
+                    .text-pink {
+                        --tblr-text-opacity: 1;
+                        color: rgba(var(--tblr-pink-rgb),var(--tblr-text-opacity))!important;
+                    }
+                }
+            }
+            .list-inline-item:before {
+                content: " · ";
+                -webkit-margin-end: 0.5rem;
+                margin-inline-end: 0.5rem;
+            }
+        }
+        .row>* {
+            min-width: 0;
+        }
+        .row>* {
+            flex-shrink: 0;
+            width: 100%;
+            max-width: 100%;
+            padding-right: calc(var(--tblr-gutter-x) * .5);
+            padding-left: calc(var(--tblr-gutter-x) * .5);
+            margin-top: var(--tblr-gutter-y);
+        }
+    }
+}
+@media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1320px;
+}}
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}}
+@media (min-width: 992px){
+.ms-lg-auto {
+    margin-left: auto!important;
+}}
+@media (min-width: 992px){
+.col-lg-auto {
+    flex: 0 0 auto;
+    width: auto !important;
+}}
